@@ -1,0 +1,219 @@
+
+
+
+		.btn_base{
+
+			background: none;
+			border: 2px solid #000;
+			font-family: "montserrat", sans-serif;
+			text-transform: uppercase;
+			padding: 12px 20px;
+			min-width: 200px;
+			margin: 10px;
+			cursor: pointer;
+			transition: color 0.4s linear;
+			position: relative;
+			font-weight: bold;
+		}
+		.cpf_base{
+
+			background: none;
+			color: black;
+			border: 2px solid #000;
+			font-size: 17px;
+			font-family: "montserrat", sans-serif;
+			text-transform: uppercase;
+			padding: 12px 20px;
+			min-width: 200px;
+			margin: 10px;
+			position: relative;
+			font-weight: bold;
+		}
+
+		.btn_base:hover{
+
+			color: #fff;
+
+		}
+
+		.btn_base::before{
+
+			content: "";
+			position: absolute;
+			left: 0;
+			top:0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			z-index: -1;
+			transition:  transform 0.5s;
+			transform-origin: 0 0;
+			transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+		}
+
+		.btn_cliente::before{
+			
+			transform: scaleX(0);
+		
+		}
+		
+		.btn_processo::before{
+
+			transform: scaleY(0);
+
+		}
+		.btn_cliente:hover::before{
+
+			transform: scaleX(1);
+		}
+
+		.btn_processo:hover::before{
+
+			transform: scaleY(1);
+
+		}
+		
+
+	
+		 
+
+	
+
+	*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+body{
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+;
+}
+nav{
+background: #D2691E;
+height: 50px;
+width: 100%;
+}
+label.logo{
+color: #000;
+font-size: 35px;
+line-height: 40px;
+padding: 0 100px;
+font-weight: bold;
+}
+nav ul{
+float: right;
+margin-right: 20px;
+}
+nav ul li{
+display: inline-block;
+line-height: 50px;
+margin: 0 13px;
+}
+nav ul li a{
+color: #24211f;
+font-size: 13px;
+padding: 13px 15px;
+border-radius: 3px;
+text-transform: uppercase;
+transition: .5s ease;
+}
+a.active,a:hover{
+background: #E6E6FA;
+color: #24211f;
+
+
+transition: .5s;
+}
+.checkbtn{
+font-size: 30px;
+color: #fff;
+float: right;
+line-height: 50px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+@media (max-width: 956px){
+label.logo{
+  font-size: 30px;
+  padding-left: 50px;
+}
+nav ul li a{
+  font-size: 16px;
+  color: #fff;
+}
+}
+@media (max-width: 1100px){
+.checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #24211f;	
+  z-index: 1;
+
+
+  opacity: 0.9;
+  top: 50px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav ul li a{
+  font-size: 20px;
+  color: #fff;
+}
+a:hover,a.active{
+  background: none;
+  color: #D2691E;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+
+.text1{
+
+color: #fff;
+font-size: 37px;
+font-weight: bold;
+letter-spacing: 8px;
+position: relative;
+margin-bottom: 30px;
+background: #222;
+animation: text 2.5s 1;
+
+}
+
+}
+
+
+
+#logo img{
+
+margin: -5px 50px;
+float: left;
+width: 60px;
+height: 55px;
+cursor: pointer;
+text-decoration: none;
+
+}
+
+a:link{
+
+text-decoration: none;
+
+}  

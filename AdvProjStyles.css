@@ -1,0 +1,518 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+.Fordivm{
+
+   vertical-align: center;
+   width: auto;
+   height: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   margin: auto;
+   width: 80%;
+   font-style: "Lucida Bright";
+
+}
+.divForm h2{
+  color:#FF4500;
+  border-bottom: 3px solid #FF4500;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+.centerAl{
+  text-align: center;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+  
+}
+
+  .Center
+  {
+   margin: auto;
+   width: 50%;
+   padding: 10px;
+   text-align: center;
+  }
+
+  .btnPosition 
+    {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.pat_frm1{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  text-align: center;
+}
+
+.div_col{
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px 9px;
+  margin: 0 auto;
+}
+
+
+
+select {
+    color:#999;
+    height: 30px;
+}
+
+.inp1{
+
+    font-family: "Verdana";
+    outline: none;
+    background: white;
+    font-size: 15px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+    border: solid 3px;
+    border-style: groove;
+    border-radius: 5px;
+    font-style: "Eras ITC";
+    margin: auto;
+
+}
+
+
+.btnVoltar{
+  border-radius: 4px;
+  background-color: #FF4500;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+.btnVoltar span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btnVoltar span:after {
+  content: "<<";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.btnVoltar:hover span {
+  padding-left: 25px;
+}
+
+.btnVoltar:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+.btnInicial {
+  background-color: #FF4500;
+ /* position: relative;
+  width: 160px;
+  right:0; */
+  position:relative;
+  float:right;
+  bottom:0;
+  border: none;
+  font-size: 13px;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 160px;
+  text-align: center;
+  -webkit-transition-duration: 0.6s; 
+  transition-duration: 0.6s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px;
+
+}
+
+.btnInicial:after {
+  content: "";
+  background: #FF4500;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.10s
+}
+
+.btnInicial:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.divForm2{
+
+  background-color: black;
+  border-style: solid 1px #000000;
+  border-radius: 5px #000000;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  font-style: "Lucida Bright";
+  height: 40px;
+}
+
+.corpo_form{
+    background: white;
+  min-height: 100vh;
+}
+
+.div_enviar{
+
+  background-color: lightgrey;
+  border-style: solid 1px #000000;
+  border-radius: 5px #000000;
+  color: white;
+  padding: 10px;
+  font-style: "Lucida Bright";  
+  text-align: center;
+  height: 60px;
+}
+
+.pat_frm1{
+
+  background-color:#FFFFFF;
+  height: 300px
+}
+
+.div_lista{
+
+  border-style: solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow:scroll;
+  height:300px;
+  width:100%;
+  overflow:auto
+}
+
+.div_info{
+
+  border-style: solid;
+  border-radius: 5px;
+
+
+}
+   #btnEnviar{
+    font-family: "Verdana";
+    height: auto;
+    width: auto;
+    background: white;
+    border: 2px solid #FF4500;
+    color: #FF4500;
+    padding: 10px;
+    cursor: pointer;
+    margin: 1px 0;
+    font-size: 15px;
+   }
+   #btnEnviar:hover{
+    background: rgb(250,250,250,0.8);
+   }
+   .col_list{
+    font-family: "Verdana";
+    outline: none;
+    background: white;
+    font-size: 20px;
+    width: 100%;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+    font-style: "Eras ITC";
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+   }
+   .title_list{
+    font-family: "Verdana";
+    outline: none;
+    background: black;
+    font-size: 20px;
+    color:white;
+    width: 100%;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+    font-style: "Eras ITC";
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+   }
+
+
+ .row_list{
+
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+   }
+  /*
+   .divForm3{
+
+  background-color: lightgrey;
+  border-style: solid 1px #000000;
+  border-radius: 5px #000000;
+  font-size: 20px;
+  color: black;
+  padding: 40px;
+  font-style: "Lucida Bright";
+   } 
+*/
+
+
+        .search-box{
+    position: absolute;
+    width: 40px;
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    transition: 0.4s;
+    top: 15%;
+
+   }
+
+ .search-box:hover{
+
+  transform: translate(0%,0%);
+    width: 280px;
+   }
+
+   .search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+   }
+
+
+   .search-box:hover > .search-btn{
+
+    background: white;
+
+   }
+
+   .search-btn{
+
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+   }
+
+   .search-txt{
+
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+    
+
+   }
+
+   .card{
+    position: absolute;
+    transform: translate(60%,10%);
+      padding: 1%;
+     background: #2f3640;
+     height: 80%;
+     width: 500px;
+     background: #fff;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+   }
+
+     .search-box2{
+    position: absolute;
+    width: 40px;
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    transition: 0.4s;
+    top: 18%;
+
+   }
+
+ .search-box2:hover{
+
+  transform: translate(0%,0%);
+    width: 280px;
+   }
+
+   .search-box2:hover > .search-txt2{
+    width: 240px;
+    padding: 0 6px;
+   }
+
+
+   .search-box2:hover > .search-btn2{
+
+    background: white;
+
+   }
+
+   .search-btn2{
+
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+   }
+
+   .search-txt2{
+
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+    
+
+   }
+
+
+    .card2{
+      position: absolute;
+      transform: translate(10%, 70%);
+      padding: 10px;
+      background: #2f3640;
+      height: auto;
+      width: 500px;
+      background: #fff;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+   }
+ /*   #textoPesquisa{
+
+      width: 350px;
+      height: 40px;
+      float: left;
+      font-family: 'Arial';
+      font-size: 20px;
+
+    }
+
+    .btn_2{
+
+      width: 45px;
+      height: 40px;
+      background-color: #FF4500;
+      padding: 5px 10px;
+    }
+
+    #textoPesquisa:focus{
+
+      border: solid 2px #FF4500;
+
+    }
+
+    */
+    #idObservacao {
+      resize: none;
+      border: 2px solid #aaa; 
+      outline: none;
+   }
+
+   #idObservacao:focus{
+
+    border-color: #D2691E;
+    box-shadow: 0 0 8px 0 #D2691E;
+
+
+   }
+
+  #idObservacaoProc {
+    resize: none;
+    border: 2px solid #aaa; 
+    outline: none;
+    height: 70px;
+
+ }
+
+ #idObservacaoProc:focus {
+
+  border-color: #D2691E;
+  box-shadow: 0 0 8px 0 #D2691E;
+
+ }
+
+
+ #idOcorrAssun{
+
+  resize: none;
+  border: 2px solid #aaa; 
+  outline: none;
+
+
+ }
+
+ #idOcorrAssun:focus{
+
+  border-color: #D2691E;
+  box-shadow: 0 0 8px 0 #D2691E;
+
+ }
+
+
+   
+ 

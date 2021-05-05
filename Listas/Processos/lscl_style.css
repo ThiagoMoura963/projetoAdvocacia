@@ -1,0 +1,76 @@
+
+		.btn_base{
+
+			background: none;
+			border: 2px solid #000;
+			font-family: "montserrat", sans-serif;
+			text-transform: uppercase;
+			padding: 12px 20px;
+			min-width: 200px;
+			margin: 10px;
+			cursor: pointer;
+			transition: color 0.4s linear;
+			position: relative;
+			font-weight: bold;
+		}
+		.cpf_base{
+
+			background: none;
+			color: black;
+			border: 2px solid #000;
+			font-size: 17px;
+			font-family: "montserrat", sans-serif;
+			text-transform: uppercase;
+			padding: 12px 20px;
+			min-width: 200px;
+			margin: 10px;
+			position: relative;
+			font-weight: bold;
+		}
+
+		.btn_base:hover{
+
+			color: #fff;
+
+		}
+
+		.btn_base::before{
+
+			content: "";
+			position: absolute;
+			left: 0;
+			top:0;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			z-index: -1;
+			transition:  transform 0.5s;
+			transform-origin: 0 0;
+			transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+		}
+
+		.btn_cliente::before{
+			
+			transform: scaleX(0);
+		
+		}
+		
+		.btn_processo::before{
+
+			transform: scaleY(0);
+
+		}
+		.btn_cliente:hover::before{
+
+			transform: scaleX(1);
+		}
+
+		.btn_processo:hover::before{
+
+			transform: scaleY(1);
+
+		}
+
+
+		 
+       

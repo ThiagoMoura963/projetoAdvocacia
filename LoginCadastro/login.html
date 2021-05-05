@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>	
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="logincadastro.css">
+  <!-- Material Design Theming -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#config-web-app -->
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+ 
+
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!--Ajax-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body class="back1">
+
+	<div id="corpo-form" class="divCorpo container-fluid">
+		<div class="row h-20"></div>
+		<div class="row h-50">
+			<div class="col-md-7"></div>
+			<div class="divLogin col-md-3" >
+				<h2>Login</h2>
+				<div class="textBox">
+   					<i class="fa fa-user" aria-hidden="true"></i>
+   					<input type="text" autocomplete="off" id="idEmail" name="email" placeholder="Email" >
+				</div>
+				<small id="erMsg1"></small>
+				<div class="textBox">
+					 <i class="fa fa-lock" aria-hidden="true"></i>
+					 <input type="password" autocomplete="off" id="idSenha" name="senha" placeholder="Senha">
+				</div>
+				<small id="erMsg2"></small>
+				<input class="btnAcesso" type="button" name="btnLogin" value="Login" onclick="loginUser()" class="inp2">
+	      		<a style="color: white" href="cadastro.html" class="linkCadastro"><strong>Ainda não tem conta? Cadastre-se</strong></a>
+	      		<a style="color: white" onclick="resetPassword()"class="linkCadastro"><strong>Esqueceu sua senha?</strong></a>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row h-30"></div>
+	</div>
+
+
+
+
+	<div id="corpo-user" class="divCorpo container-fluid" style="display: none;">
+	
+		<div class="row h-20"></div>
+		<div class="row h-50">
+			<div class="col-md-7"></div>
+			<div class="divLogin  col-md-3" >
+				<div class="textBox">
+					<p id="user_para"></p>
+				</div>
+				<input class="btnAcesso" type="button" name="btnAcess" value="Acessar" onclick="acessarSistema()" class="inp2">
+				<small id="erMsg4"></small>
+				<input class="btnAcesso" type="button" name="btnDeslog" value="Deslogar" onclick="deslogUser()" class="inp2">
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row h-30"></div>
+	</div>
+	<script type="text/javascript" src="../firebase.js"></script>
+	<script type="text/javascript" src="logincadastro.js"></script>
+
+	</body>
+
+</html>

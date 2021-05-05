@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>	
+		<title>Cadastro</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="logincadastro.css">
+  <!-- Material Design Theming -->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#config-web-app -->
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+ 
+
+	</head>
+
+	<body class="back1">
+		<!--<h2 id="idText">Sistema de Advocacia</h2>-->
+
+	<div id="corpo-form" class="divCorpo container-fluid">
+		<div class="row h-20"></div>
+		<div class="row h-50">
+			<div class="col-md-7"></div>
+			<div class="divLogin col-md-3" >
+				 <h2>Cadastro</h2>
+				<div class="textBox">
+   					<i class="fa fa-user" aria-hidden="true"></i>
+					<input type="text" id="idEmail" autocomplete="off" name="email" placeholder="Email">
+				</div>
+				<small id="erMsg1"></small>
+
+				<div class="textBox">
+   					<i class="fa fa-lock" aria-hidden="true"></i>
+					<input type="password" id="idSenha" autocomplete="off" name="senha" placeholder="Senha">
+				</div>
+				<small id="erMsg2"></small>
+
+				<div class="textBox">
+					<i class="fa fa-lock" aria-hidden="true"></i>
+					<input type="password" id="idConfSenha"autocomplete="off"  name="confsenha" placeholder="Confirmar senha">
+				</div>
+				<small id="erMsg3"></small>
+				
+				<input class="btnAcesso" type="button" name="btnSend" value="Cadastrar" onclick="createUser()">
+	     		<a href="login.html" class="linkCadastro"><strong>Já tem conta? Faça o login</strong></a>
+			</div>
+			<div class="col-md-2"></div>
+	</div>
+	<div class="row h-30"></div>
+</div>
+	<script type="text/javascript" src="../firebase.js"></script>
+	<script type="text/javascript" src="logincadastro.js"></script>
+
+	</body>
+
+</html>
